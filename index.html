@@ -6,7 +6,97 @@
 
     <title>GPRO INTERNATIONAL GROUP LIMITED</title>
 
-    <meta name="description" content="GPRO INTERNATIONAL GROUP LIMITED - International Trading Company">
+    <meta name="description" content="GPRO INTERNATIONAL GROUP LIMITED">
+```css
+/* GPRO - Professional Services Cards */
+
+.services-section {
+    background: #f7f7f7;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 45px;
+}
+
+.service-card {
+    min-height: 420px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.20);
+}
+
+.service-content {
+    color: white;
+    padding: 35px;
+    width: 100%;
+}
+
+.service-number {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    opacity: 0.85;
+}
+
+.service-content h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.service-subtitle {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+.service-content p {
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 0;
+    max-width: 650px;
+}
+
+@media (max-width: 768px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        min-height: 390px;
+    }
+
+    .service-content {
+        padding: 28px;
+    }
+
+    .service-content h3 {
+        font-size: 24px;
+    }
+
+    .service-content p {
+        font-size: 14px;
+    }
+}
+```
 
     <style>
         * {
