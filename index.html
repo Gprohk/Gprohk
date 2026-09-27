@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>GPRO INTERNATIONAL GROUP LIMITED | Business in China</title>
 
-    <meta name="description" content="GPRO INTERNATIONAL GROUP LIMITED - Su aliado estratégico para desarrollar negocios, productos y oportunidades en China.">
+    <meta name="description"
+          content="GPRO INTERNATIONAL GROUP LIMITED - Su aliado estratégico para desarrollar negocios, productos y oportunidades en China.">
 
     <style>
+
+        /* =========================
+           RESET
+        ========================= */
 
         * {
             margin: 0;
@@ -48,65 +54,98 @@
             top: 0;
             left: 0;
             width: 100%;
+
             background: rgba(255,255,255,0.96);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+
             z-index: 1000;
-            border-bottom: 1px solid #eeeeee;
         }
 
         .navbar {
-            height: 78px;
+            min-height: 78px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            gap: 30px;
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: #111111;
-        }
 
-        .logo span {
+        /* LOGO */
+
+        .logo-image {
+            height: 55px;
+            width: auto;
+            max-width: 220px;
+
+            object-fit: contain;
+
             display: block;
-            font-size: 9px;
-            letter-spacing: 2px;
-            font-weight: 400;
-            margin-top: -3px;
         }
+
+
+        /* MENU */
 
         nav {
             display: flex;
+            align-items: center;
             gap: 30px;
         }
 
         nav a {
+            position: relative;
+
             font-size: 13px;
             font-weight: 600;
             letter-spacing: 0.5px;
-            color: #222222;
+
+            color: #222;
+
+            transition: 0.3s;
+        }
+
+        nav a::after {
+            content: "";
+
+            position: absolute;
+
+            left: 0;
+            bottom: -8px;
+
+            width: 0;
+            height: 2px;
+
+            background: #111;
+
             transition: 0.3s;
         }
 
         nav a:hover {
-            color: #777777;
+            color: #666;
+        }
+
+        nav a:hover::after {
+            width: 100%;
         }
 
 
         /* =========================
-           HERO
+           HERO / INICIO
         ========================= */
 
         .hero {
+
             min-height: 100vh;
 
-            background:
+            background-image:
                 linear-gradient(
-                    rgba(0,0,0,0.52),
-                    rgba(0,0,0,0.68)
+                    rgba(0,0,0,0.40),
+                    rgba(0,0,0,0.65)
                 ),
-                url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=90");
+                url("images/INICIO.jpg");
 
             background-size: cover;
             background-position: center;
@@ -115,6 +154,7 @@
             align-items: center;
 
             color: #ffffff;
+
             padding-top: 78px;
         }
 
@@ -123,39 +163,60 @@
         }
 
         .hero-small {
+
             font-size: 14px;
+
             letter-spacing: 4px;
-            margin-bottom: 18px;
+
+            margin-bottom: 20px;
+
             text-transform: uppercase;
         }
 
         .hero h1 {
+
             font-size: 58px;
+
             line-height: 1.08;
+
             margin-bottom: 25px;
+
             font-weight: 700;
         }
 
         .hero p {
+
             font-size: 20px;
+
             max-width: 650px;
+
             margin-bottom: 35px;
         }
 
         .hero-button {
+
             display: inline-block;
+
             padding: 14px 30px;
+
             border: 1px solid #ffffff;
+
             color: #ffffff;
+
             font-size: 13px;
+
             font-weight: 600;
+
             letter-spacing: 1px;
+
             transition: 0.3s;
         }
 
         .hero-button:hover {
+
             background: #ffffff;
-            color: #111111;
+
+            color: #111;
         }
 
 
@@ -168,27 +229,40 @@
         }
 
         .section-title {
+
             text-align: center;
-            margin-bottom: 50px;
+
+            margin-bottom: 55px;
         }
 
         .section-title span {
+
             font-size: 12px;
+
             letter-spacing: 3px;
-            color: #777777;
+
+            color: #777;
+
             font-weight: 600;
         }
 
         .section-title h2 {
-            font-size: 38px;
+
+            font-size: 40px;
+
             margin: 10px 0 15px;
-            color: #111111;
+
+            color: #111;
         }
 
         .section-title p {
+
             max-width: 700px;
+
             margin: auto;
-            color: #666666;
+
+            color: #666;
+
             font-size: 16px;
         }
 
@@ -202,29 +276,43 @@
         }
 
         .about-content {
+
             max-width: 950px;
+
             margin: auto;
         }
 
         .about-content p {
+
             margin-bottom: 20px;
+
             font-size: 16px;
-            color: #444444;
+
+            color: #444;
         }
 
         .about-content h3 {
+
             font-size: 28px;
+
             margin: 40px 0 20px;
-            color: #111111;
+
+            color: #111;
         }
 
         .about-highlight {
+
             margin-top: 35px;
+
             padding: 30px;
-            background: #f5f5f5;
-            border-left: 4px solid #111111;
+
+            background: #f5f6f7;
+
+            border-left: 4px solid #111;
+
             font-size: 18px;
-            color: #222222;
+
+            color: #222;
         }
 
 
@@ -233,30 +321,39 @@
         ========================= */
 
         .services-section {
+
             background: #f5f6f7;
         }
 
         .services-grid {
+
             display: grid;
+
             grid-template-columns: repeat(2, 1fr);
+
             gap: 28px;
         }
 
         .service-card {
-            min-height: 430px;
+
+            min-height: 440px;
 
             background-size: cover;
+
             background-position: center;
 
             border-radius: 10px;
+
             overflow: hidden;
 
             position: relative;
 
             display: flex;
+
             align-items: flex-end;
 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.14);
+            box-shadow:
+                0 10px 30px rgba(0,0,0,0.13);
 
             transition:
                 transform 0.3s ease,
@@ -264,12 +361,17 @@
         }
 
         .service-card:hover {
+
             transform: translateY(-6px);
-            box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+
+            box-shadow:
+                0 18px 40px rgba(0,0,0,0.20);
         }
 
         .service-content {
+
             width: 100%;
+
             padding: 35px;
 
             color: #ffffff;
@@ -277,35 +379,43 @@
             background:
                 linear-gradient(
                     transparent,
-                    rgba(0,0,0,0.82)
+                    rgba(0,0,0,0.86)
                 );
         }
 
         .service-number {
-            color: #ffffff;
-            font-size: 14px;
+
+            font-size: 13px;
+
             letter-spacing: 3px;
-            font-weight: 600;
+
             margin-bottom: 12px;
+
+            font-weight: 600;
         }
 
         .service-content h3 {
-            color: #ffffff;
+
             font-size: 28px;
+
             margin-bottom: 10px;
+
             font-weight: 600;
         }
 
         .service-content h4 {
-            color: #ffffff;
+
             font-size: 16px;
+
             margin-bottom: 15px;
+
             font-weight: 500;
         }
 
         .service-content p {
-            color: #ffffff;
+
             font-size: 15px;
+
             line-height: 1.7;
         }
 
@@ -315,24 +425,31 @@
         ========================= */
 
         .products-section {
+
             background: #ffffff;
         }
 
         .products-grid {
+
             display: grid;
+
             grid-template-columns: repeat(4, 1fr);
+
             gap: 22px;
         }
 
         .product-card {
-            min-height: 270px;
+
+            min-height: 290px;
 
             background-size: cover;
+
             background-position: center;
 
             position: relative;
 
             display: flex;
+
             align-items: flex-end;
 
             overflow: hidden;
@@ -345,26 +462,42 @@
         }
 
         .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+
+            transform: translateY(-6px);
+
+            box-shadow:
+                0 15px 35px rgba(0,0,0,0.18);
         }
 
         .product-overlay {
+
             width: 100%;
+
             padding: 25px;
 
             background:
                 linear-gradient(
                     transparent,
-                    rgba(0,0,0,0.85)
+                    rgba(0,0,0,0.86)
                 );
 
             color: #ffffff;
         }
 
         .product-overlay h3 {
+
             font-size: 20px;
+
             color: #ffffff;
+
+            margin-bottom: 5px;
+        }
+
+        .product-overlay p {
+
+            font-size: 13px;
+
+            color: #eeeeee;
         }
 
 
@@ -374,43 +507,53 @@
 
         .contact-section {
 
-            background:
+            background-image:
                 linear-gradient(
-                    rgba(5,12,22,0.84),
-                    rgba(5,12,22,0.88)
+                    rgba(4,10,18,0.76),
+                    rgba(4,10,18,0.86)
                 ),
-                url("https://images.unsplash.com/photo-1521292270410-a8c4d716d518?auto=format&fit=crop&w=1800&q=90");
+                url("images/CONTACTO.jpg");
 
             background-size: cover;
+
             background-position: center;
+
+            background-attachment: fixed;
 
             color: #ffffff;
         }
 
         .contact-section .section-title h2,
         .contact-section .section-title p {
+
             color: #ffffff;
         }
 
         .contact-section .section-title span {
-            color: #b8c0ca;
+
+            color: #bfc6cf;
         }
 
         .contact-grid {
+
             display: grid;
+
             grid-template-columns: repeat(3, 1fr);
+
             gap: 25px;
 
             max-width: 1000px;
+
             margin: auto;
         }
 
         .contact-box {
+
             border: 1px solid rgba(255,255,255,0.25);
 
-            background: rgba(255,255,255,0.06);
+            background: rgba(255,255,255,0.07);
 
-            backdrop-filter: blur(8px);
+            backdrop-filter: blur(10px);
 
             padding: 35px 25px;
 
@@ -422,34 +565,60 @@
         }
 
         .contact-box:hover {
-            background: rgba(255,255,255,0.12);
-            transform: translateY(-4px);
-        }
 
-        .contact-box h3 {
-            color: #ffffff;
-            margin-bottom: 12px;
-            font-size: 18px;
-        }
+            background: rgba(255,255,255,0.13);
 
-        .contact-box p,
-        .contact-box a {
-            color: #dddddd;
-            font-size: 15px;
-            word-break: break-word;
-        }
-
-        .contact-box a:hover {
-            color: #ffffff;
+            transform: translateY(-5px);
         }
 
         .contact-icon {
+
             font-size: 28px;
+
             margin-bottom: 12px;
         }
 
-        .whatsapp-link {
-            display: inline-block;
+        .contact-box h3 {
+
+            color: #ffffff;
+
+            margin-bottom: 12px;
+
+            font-size: 18px;
+        }
+
+        .contact-box p {
+
+            color: #dddddd;
+
+            font-size: 15px;
+
+            word-break: break-word;
+        }
+
+        .contact-box a {
+
+            color: #ffffff;
+
+            font-weight: 500;
+
+            transition: 0.3s;
+        }
+
+        .contact-box a:hover {
+
+            opacity: 0.75;
+        }
+
+        .whatsapp-description {
+
+            margin-top: 12px;
+
+            font-size: 13px !important;
+
+            color: #cfd5dc !important;
+
+            line-height: 1.6;
         }
 
 
@@ -458,8 +627,10 @@
         ========================= */
 
         footer {
+
             background: #080808;
-            color: #888888;
+
+            color: #888;
 
             text-align: center;
 
@@ -469,12 +640,13 @@
         }
 
         footer strong {
+
             color: #ffffff;
         }
 
 
         /* =========================
-           MOBILE
+           TABLET
         ========================= */
 
         @media (max-width: 1000px) {
@@ -494,95 +666,129 @@
             .products-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
-
         }
 
+
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 750px) {
 
             .navbar {
-                height: auto;
-                padding: 18px 0;
+
+                padding: 15px 0;
 
                 flex-direction: column;
-                gap: 15px;
+
+                gap: 14px;
+            }
+
+            .logo-image {
+
+                height: 48px;
+
+                max-width: 190px;
             }
 
             nav {
+
                 flex-wrap: wrap;
+
                 justify-content: center;
+
                 gap: 13px;
             }
 
+            nav a {
+
+                font-size: 10px;
+            }
+
             .hero {
+
                 padding-top: 140px;
             }
 
             .hero h1 {
+
                 font-size: 38px;
             }
 
             .hero p {
+
                 font-size: 17px;
             }
 
             .section {
+
                 padding: 70px 0;
             }
 
             .section-title h2 {
+
                 font-size: 30px;
             }
 
             .services-grid {
+
                 grid-template-columns: 1fr;
             }
 
             .service-card {
-                min-height: 400px;
+
+                min-height: 410px;
             }
 
             .products-grid {
+
                 grid-template-columns: 1fr;
             }
 
             .contact-grid {
+
                 grid-template-columns: 1fr;
             }
 
+            .contact-section {
+
+                background-attachment: scroll;
+            }
         }
 
 
+        /* =========================
+           SMALL MOBILE
+        ========================= */
+
         @media (max-width: 450px) {
 
-            .logo {
-                font-size: 21px;
-            }
-
-            .logo span {
-                font-size: 8px;
-            }
-
             .hero h1 {
+
                 font-size: 32px;
             }
 
             .hero-small {
+
                 font-size: 11px;
+
                 letter-spacing: 2px;
             }
 
             .service-content {
+
                 padding: 25px;
             }
 
             .service-content h3 {
+
                 font-size: 24px;
             }
 
         }
 
     </style>
+
 </head>
 
 
@@ -597,16 +803,21 @@
 
         <div class="container navbar">
 
-            <a href="#home" class="logo">
 
-                GPRO
+            <!-- LOGO -->
 
-                <span>
-                    INTERNATIONAL GROUP LIMITED
-                </span>
+            <a href="#home">
+
+                <img
+                    src="images/LOGO.png"
+                    alt="GPRO INTERNATIONAL GROUP LIMITED"
+                    class="logo-image"
+                >
 
             </a>
 
+
+            <!-- MENU -->
 
             <nav>
 
@@ -639,7 +850,7 @@
 
 
     <!-- =========================
-         HOME
+         INICIO
     ========================= -->
 
     <section id="home" class="hero">
@@ -649,23 +860,31 @@
             <div class="hero-content">
 
                 <div class="hero-small">
+
                     International Business • China
+
                 </div>
 
 
                 <h1>
+
                     GPRO INTERNATIONAL GROUP LIMITED
+
                 </h1>
 
 
                 <p>
+
                     Su aliado estratégico para desarrollar negocios,
                     productos y oportunidades en China.
+
                 </p>
 
 
                 <a href="#contact" class="hero-button">
+
                     CONTÁCTENOS
+
                 </a>
 
             </div>
@@ -677,7 +896,7 @@
 
 
     <!-- =========================
-         ABOUT US
+         SOBRE NOSOTROS
     ========================= -->
 
     <section id="about" class="section about-section">
@@ -725,17 +944,9 @@
                 <p>
 
                     Durante estos años hemos construido una sólida experiencia
-                    en
-
-                    <strong>
-                        comercio internacional, sourcing, importación y exportación
-                    </strong>
-
-                    , trabajando principalmente con clientes de
-
-                    <strong>
-                        Latinoamérica y mercados de habla hispana.
-                    </strong>
+                    en <strong>comercio internacional, sourcing, importación y
+                    exportación</strong>, trabajando principalmente con clientes
+                    de <strong>Latinoamérica y mercados de habla hispana.</strong>
 
                 </p>
 
@@ -754,11 +965,8 @@
 
                     En GPRO entendemos que hacer negocios en China va mucho más
                     allá de encontrar un producto. Se trata de encontrar
-
-                    <strong>
-                        el proveedor adecuado, la calidad correcta, el precio
-                        competitivo y las mejores condiciones para cada negocio.
-                    </strong>
+                    <strong>el proveedor adecuado, la calidad correcta, el precio
+                    competitivo y las mejores condiciones para cada negocio.</strong>
 
                 </p>
 
@@ -782,12 +990,9 @@
 
                     Con años de experiencia en China y un profundo conocimiento
                     de las necesidades de los mercados latinoamericanos, nuestro
-                    objetivo es
-
-                    <strong>
-                        facilitar el acceso a oportunidades comerciales en China
-                        y ayudar a nuestros clientes a desarrollar negocios exitosos.
-                    </strong>
+                    objetivo es <strong>facilitar el acceso a oportunidades
+                    comerciales en China y ayudar a nuestros clientes a
+                    desarrollar negocios exitosos.</strong>
 
                 </p>
 
@@ -795,15 +1000,9 @@
                 <p>
 
                     En GPRO no buscamos ser simplemente un proveedor.
-
-                    Queremos ser
-
-                    <strong>
-                        su aliado de confianza en China
-                    </strong>
-
-                    , brindando profesionalismo, experiencia,
-                    comunicación clara y soluciones orientadas a cada proyecto.
+                    Queremos ser <strong>su aliado de confianza en China</strong>,
+                    brindando profesionalismo, experiencia, comunicación clara
+                    y soluciones orientadas a cada proyecto.
 
                 </p>
 
@@ -830,7 +1029,7 @@
 
 
     <!-- =========================
-         WHY GPRO
+         POR QUE GPRO
     ========================= -->
 
     <section id="services" class="section services-section">
@@ -849,28 +1048,31 @@
                 </h2>
 
                 <p>
+
                     Experiencia, capacidad y soluciones integrales
                     para desarrollar sus negocios en China.
+
                 </p>
 
             </div>
 
 
-
             <div class="services-grid">
 
 
-                <!-- 01 PRODUCCION -->
+                <!-- PRODUCCION -->
 
-                <div class="service-card"
-
-                     style="background-image:
-                     linear-gradient(
-                         rgba(0,0,0,0.30),
-                         rgba(0,0,0,0.78)
-                     ),
-                     url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1400&q=90');">
-
+                <div
+                    class="service-card"
+                    style="
+                        background-image:
+                        linear-gradient(
+                            rgba(0,0,0,0.25),
+                            rgba(0,0,0,0.80)
+                        ),
+                        url('images/PRODUCCION.jpg');
+                    "
+                >
 
                     <div class="service-content">
 
@@ -901,17 +1103,19 @@
 
 
 
-                <!-- 02 RED DE FABRICAS -->
+                <!-- FABRICAS -->
 
-                <div class="service-card"
-
-                     style="background-image:
-                     linear-gradient(
-                         rgba(0,0,0,0.30),
-                         rgba(0,0,0,0.78)
-                     ),
-                     url('https://images.unsplash.com/photo-1565610222536-ef125c59da2e?auto=format&fit=crop&w=1400&q=90');">
-
+                <div
+                    class="service-card"
+                    style="
+                        background-image:
+                        linear-gradient(
+                            rgba(0,0,0,0.25),
+                            rgba(0,0,0,0.80)
+                        ),
+                        url('images/FABRICAS.jpg');
+                    "
+                >
 
                     <div class="service-content">
 
@@ -942,17 +1146,19 @@
 
 
 
-                <!-- 03 LOGISTICA -->
+                <!-- LOGISTICA -->
 
-                <div class="service-card"
-
-                     style="background-image:
-                     linear-gradient(
-                         rgba(0,0,0,0.30),
-                         rgba(0,0,0,0.78)
-                     ),
-                     url('https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&w=1400&q=90');">
-
+                <div
+                    class="service-card"
+                    style="
+                        background-image:
+                        linear-gradient(
+                            rgba(0,0,0,0.25),
+                            rgba(0,0,0,0.80)
+                        ),
+                        url('images/LOGISTICA.jpg');
+                    "
+                >
 
                     <div class="service-content">
 
@@ -983,17 +1189,19 @@
 
 
 
-                <!-- 04 SOCIO COMERCIAL -->
+                <!-- SOCIO -->
 
-                <div class="service-card"
-
-                     style="background-image:
-                     linear-gradient(
-                         rgba(0,0,0,0.20),
-                         rgba(0,0,0,0.65)
-                     ),
-                     url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1400&q=90');">
-
+                <div
+                    class="service-card"
+                    style="
+                        background-image:
+                        linear-gradient(
+                            rgba(0,0,0,0.18),
+                            rgba(0,0,0,0.72)
+                        ),
+                        url('images/SOCIO.jpg');
+                    "
+                >
 
                     <div class="service-content">
 
@@ -1032,7 +1240,7 @@
 
 
     <!-- =========================
-         PRODUCTS
+         PRODUCTOS
     ========================= -->
 
     <section id="products" class="section products-section">
@@ -1060,22 +1268,22 @@
             </div>
 
 
-
             <div class="products-grid">
-
 
 
                 <!-- LINEA BLANCA -->
 
-                <div class="product-card"
-
-                     style="background-image:
-                     linear-gradient(
-                         rgba(0,0,0,0.10),
-                         rgba(0,0,0,0.78)
-                     ),
-                     url('https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=1000&q=90');">
-
+                <div
+                    class="product-card"
+                    style="
+                        background-image:
+                        linear-gradient(
+                            rgba(0,0,0,0.08),
+                            rgba(0,0,0,0.82)
+                        ),
+                        url('images/LINEA BLANCA.jpg');
+                    "
+                >
 
                     <div class="product-overlay">
 
@@ -1094,17 +1302,19 @@
 
 
 
-                <!-- TECNOLOGIA -->
+                <!-- TECNO -->
 
-                <div class="product-card"
-
-                     style="background-image:
-                     linear-gradient(
-                         rgba(0,0,0,0.12),
-                         rgba(0,0,0,0.80)
-                     ),
-                     url('https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=1000&q=90');">
-
+                <div
+                    class="product-card"
+                    style="
+                        background-image:
+                        linear-gradient(
+                            rgba(0,0,0,0.08),
+                            rgba(0,0,0,0.82)
+                        ),
+                        url('images/TECNO.jpg');
+                    "
+                >
 
                     <div class="product-overlay">
 
@@ -1123,17 +1333,19 @@
 
 
 
-                <!-- ILUMINACION -->
+                <!-- LED -->
 
-                <div class="product-card"
-
-                     style="background-image:
-                     linear-gradient(
-                         rgba(0,0,0,0.10),
-                         rgba(0,0,0,0.78)
-                     ),
-                     url('https://images.unsplash.com/photo-1550985543-f4b9d8f4f7f7?auto=format&fit=crop&w=1000&q=90');">
-
+                <div
+                    class="product-card"
+                    style="
+                        background-image:
+                        linear-gradient(
+                            rgba(0,0,0,0.08),
+                            rgba(0,0,0,0.82)
+                        ),
+                        url('images/LED.jpg');
+                    "
+                >
 
                     <div class="product-overlay">
 
@@ -1154,15 +1366,17 @@
 
                 <!-- HOGAR -->
 
-                <div class="product-card"
-
-                     style="background-image:
-                     linear-gradient(
-                         rgba(0,0,0,0.10),
-                         rgba(0,0,0,0.80)
-                     ),
-                     url('https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=90');">
-
+                <div
+                    class="product-card"
+                    style="
+                        background-image:
+                        linear-gradient(
+                            rgba(0,0,0,0.08),
+                            rgba(0,0,0,0.82)
+                        ),
+                        url('images/HOGAR.jpg');
+                    "
+                >
 
                     <div class="product-overlay">
 
@@ -1189,7 +1403,7 @@
 
 
     <!-- =========================
-         CONTACT
+         CONTACTO
     ========================= -->
 
     <section id="contact" class="section contact-section">
@@ -1217,9 +1431,7 @@
             </div>
 
 
-
             <div class="contact-grid">
-
 
 
                 <!-- EMAIL -->
@@ -1253,7 +1465,7 @@
                 <div class="contact-box">
 
                     <div class="contact-icon">
-                        ☎
+                        💬
                     </div>
 
                     <h3>
@@ -1263,7 +1475,6 @@
                     <p>
 
                         <a
-                            class="whatsapp-link"
                             href="https://wa.me/8613532036489"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -1275,9 +1486,12 @@
 
                     </p>
 
-                    <p style="margin-top:8px; font-size:13px;">
 
-                        WhatsApp • WeChat
+                    <p class="whatsapp-description">
+
+                        Haz clic en el número para acceder
+                        directamente a WhatsApp y comenzar
+                        una conversación con nuestro equipo.
 
                     </p>
 
@@ -1326,7 +1540,7 @@
 
         <p>
 
-            © 2018
+            © 2026
 
             <strong>
                 GPRO INTERNATIONAL GROUP LIMITED
